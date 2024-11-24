@@ -2,10 +2,15 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+//import { createLogger } from "vite";
 
-function App() {
+//function App() {
+const App = () => {
   const [count, setCount] = useState(0);
-
+  const myFunction = () => {
+    console.log("run my function ");
+  };
+  myFunction();
   return (
     <>
       <div>
@@ -30,6 +35,6 @@ function App() {
       </p>
     </>
   );
-}
+};
 
 export default App;
