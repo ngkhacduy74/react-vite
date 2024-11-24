@@ -5,12 +5,13 @@ import "./App.css";
 //import { createLogger } from "vite";
 
 //function App() {
+//component = html + css + javascript
+const MyComponent = () => {
+  return <div>eric & hoidanit update</div>;
+};
 const App = () => {
   const [count, setCount] = useState(0);
-  const myFunction = () => {
-    console.log("run my function ");
-  };
-  myFunction();
+
   return (
     <>
       <div>
@@ -22,6 +23,7 @@ const App = () => {
         </a>
       </div>
       <h1>Hello world & hoidanit</h1>
+      <MyComponent />
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
