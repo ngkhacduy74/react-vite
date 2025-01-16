@@ -6,6 +6,7 @@ const TodoNew = (props) => {
   //const valueInput = "eric";
   const [valueInput, setvalueInput] = useState("eric");
   const handleClick = () => {
+    addNewTodo(valueInput);
     console.log("Check value input : ", valueInput);
     //alert("Click me");
   };
