@@ -1,12 +1,13 @@
 /* eslint-disable react/prop-types */
 const TodoData = (props) => {
-  // console.log("kajhsdkahsd", props);
+  console.log("Check props", props);
   // const { name, age } = props;
   return (
     <div className="todo-data">
       <div>My name is {props.name}</div>
       <div>Learning React</div>
       <div>Learning Python</div>
+      <div>{JSON.stringify(props.todoList)}</div>
     </div>
   );
 };
