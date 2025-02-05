@@ -29,7 +29,7 @@ const TodoNew = (props) => {
         onClick={handleClick}
       >
         Add
-      </button>
+      </button >
       <div>My text input is = {valueInput} </div>
     </div>
   );

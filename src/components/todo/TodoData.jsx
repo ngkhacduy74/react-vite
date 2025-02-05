@@ -1,13 +1,21 @@
 const TodoData = (props) => {
   console.log("Check props", props);
-  const { todoList } = props;
+  const { todoList, deleteTodo } = props;
+  const handleClick = (id) => {
+    alert(id);
+  };
   return (
     <div className="todo-data">
       {todoList.map((item, index) => {
         return (
           <div className={`todo-item ${item}`}>
             <div>{item.name}</div>
-            <button>Delete</button>
+            <button
+              onClick={() => deleteTodo(item.id)}
+              style={{ cursor: "pointer" }}
+            >
+              Delete
+            </button>
           </div>
         );
       })}

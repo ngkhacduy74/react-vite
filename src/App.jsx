@@ -8,7 +8,11 @@ const App = () => {
     // { id: 1, name: "Learning React" },
     // { id: 2, name: "Watching Youtube" },
   ]);
-
+  const deleteTodo = (id) => {
+    const newTodo = todoList.filter((item) => item.id !== id);
+    setTodoList(newTodo);
+    console.log(">> delete todos");
+  };
   const hoidanit = "Eric Arsenal";
   const age = 25;
   const data = {
@@ -35,7 +39,7 @@ const App = () => {
           <img src={reactLogo} />
         </div>
       ) : (
-        <TodoData todoList={todoList} />
+        <TodoData todoList={todoList} deleteTodo={deleteTodo} />
       )}
       {/* {todoList.length !== 0 && <TodoData todoList={todoList} />}
 
