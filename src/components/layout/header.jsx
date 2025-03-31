@@ -1,17 +1,18 @@
+import { Link } from "react-router-dom";
 import "./header.css";
 const Header = () => {
   return (
     <ul>
       <li>
-        <a class="active" href="/">
+        <Link class="active" to="/">
           Home
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="/users">User</a>
+        <a to="/users">User</a>
       </li>
       <li>
-        <a href="/products">Product</a>
+        <Link to="/products">Product</Link>
       </li>
     </ul>
   );
