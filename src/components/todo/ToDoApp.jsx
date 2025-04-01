@@ -1,12 +1,8 @@
-import "./components/todo/todo.css";
-import TodoData from "./components/todo/TodoData";
-import TodoNew from "./components/todo/TodoNew";
-import reactLogo from "./assets/react.svg";
+import "./todo.css";
+import TodoData from "./TodoData";
+import TodoNew from "./TodoNew";
+import reactLogo from "../../assets/react.svg";
 import { useState } from "react";
-import Header from "./components/layout/header";
-import Footer from "./components/layout/footer";
-import { Outlet } from "react-router-dom";
-
 const ToDoApp = () => {
   const [todoList, setTodoList] = useState([
     // { id: 1, name: "Learning React" },
@@ -47,24 +43,13 @@ const ToDoApp = () => {
         <TodoData todoList={todoList} deleteTodo={deleteTodo} />
       )}
       {/* {todoList.length !== 0 && <TodoData todoList={todoList} />}
-
-  {todoList.length === 0 && (
-    <div className="todo-image">
-      <img src={reactLogo} />
-    </div>
-  )} */}
+  
+    {todoList.length === 0 && (
+      <div className="todo-image">
+        <img src={reactLogo} />
+      </div>
+    )} */}
     </div>
   );
 };
-const App = () => {
-  return (
-    <>
-      <Header />
-
-      <Outlet />
-      <Footer />
-    </>
-  );
-};
-
-export default App;
+export default ToDoApp;
