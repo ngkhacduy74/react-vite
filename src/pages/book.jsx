@@ -1,4 +1,4 @@
 const BookPage = () => {
-  return <div>Products Page</div>;
+  return <div>Book Page</div>;
 };
 export default BookPage;
